@@ -1,9 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
+import { auth, provider } from '../../Firebase/Firebase'
 // import styled from 'styled-components'
 import './Header.css'
 
 function Header() {
+
+    // const handleAuth = ()=>{
+    //     auth.signInWithPopup(provider).then((result)=>{
+    //         console.log(result);
+    //     }).catch((error)=>{
+    //         alert(error.message)
+    //     })
+    // }
+
   return (
     
         <div className="navBar">
