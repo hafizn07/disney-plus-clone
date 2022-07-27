@@ -28,7 +28,7 @@ function Header() {
             photo: user.photoURL,
           })
         );
-        navigate("/");
+        navigate("/home");
       }
     });
   }, [userName]);
@@ -48,7 +48,7 @@ function Header() {
         .signOut()
         .then(() => {
           dispatch(setSignOut());
-          navigate("/login");
+          navigate("/");
         })
         .catch((err) => alert(err.message));
     }
@@ -59,7 +59,7 @@ function Header() {
       setUserLogIn({
         name: user.displayName,
         email: user.email,
-        photo: user.photoURL,
+        photo: user.photoURL
       })
     );
   };
@@ -67,7 +67,7 @@ function Header() {
   return (
     <Nav>
       <Logo>
-        <img src="Assets/images/logo.svg" alt="Disney+" />
+        <img src="/Assets/images/logo.svg" alt="Disney+" />
       </Logo>
 
       {!userName ? (
@@ -76,27 +76,27 @@ function Header() {
         <>
           <NavMenu>
             <a href="/home">
-              <img src="Assets/images/home-icon.svg" alt="HOME" />
+              <img src="/Assets/images/home-icon.svg" alt="HOME" />
               <span>HOME</span>
             </a>
             <a>
-              <img src="Assets/images/search-icon.svg" alt="SEARCH" />
+              <img src="/Assets/images/search-icon.svg" alt="SEARCH" />
               <span>SEARCH</span>
             </a>
             <a>
-              <img src="Assets/images/watchlist-icon.svg" alt="WATCHLIST" />
+              <img src="/Assets/images/watchlist-icon.svg" alt="WATCHLIST" />
               <span>WATCHLIST</span>
             </a>
             <a>
-              <img src="Assets/images/original-icon.svg" alt="ORIGINALS" />
+              <img src="/Assets/images/original-icon.svg" alt="ORIGINALS" />
               <span>ORIGINALS</span>
             </a>
             <a>
-              <img src="Assets/images/movie-icon.svg" alt="MOVIES" />
+              <img src="/Assets/images/movie-icon.svg" alt="MOVIES" />
               <span>MOVIES</span>
             </a>
             <a>
-              <img src="Assets/images/series-icon.svg" alt="SERIES" />
+              <img src="/Assets/images/series-icon.svg" alt="SERIES" />
               <span>SERIES</span>
             </a>
           </NavMenu>
@@ -194,9 +194,9 @@ const NavMenu = styled.div`
       }
     }
   }
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
-  } */
+  }
 `;
 
 const Login = styled.a`
@@ -207,6 +207,7 @@ const Login = styled.a`
   border: 1px solid #f9f9f9;
   border-radius: 4px;
   transition: all 0.2s ease 0s;
+  cursor: pointer;
   &:hover {
     background-color: #f9f9f9;
     color: #000;

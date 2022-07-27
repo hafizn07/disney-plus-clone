@@ -8,15 +8,14 @@ function Details() {
   const [detailData, setDetailData] = useState({});
 
   useEffect(() => {
-    //Grab th movie info from DB
     db.collection("movies")
       .doc(id)
       .get()
       .then((doc) => {
         if (doc.exists) {
-          setDetailData(doc.data()); //saves the movie data
+          setDetailData(doc.data());
         } else {
-          console.log("no such document in firebase 🔥"); //redirect to home page
+          console.log("no such document in firebase 🔥");
         }
       })
       .catch((error) => {
@@ -36,11 +35,11 @@ function Details() {
       <ContentMeta>
         <Controls>
           <Player>
-            <img src="/images/play-icon-black.png" alt="" />
+            <img src="/Assets/images/play-icon-black.png" alt="" />
             <span>Play</span>
           </Player>
           <Trailer>
-            <img src="/images/play-icon-white.png" alt="" />
+            <img src="/Assets/images/play-icon-white.png" alt="" />
             <span>Trailer</span>
           </Trailer>
           <AddList>
@@ -49,7 +48,7 @@ function Details() {
           </AddList>
           <GroupWatch>
             <div>
-              <img src="/images/group-icon.png" alt="" />
+              <img src="/Assets/images/group-icon.png" alt="" />
             </div>
           </GroupWatch>
         </Controls>

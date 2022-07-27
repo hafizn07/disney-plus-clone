@@ -14,9 +14,9 @@ function App() {
         <Header />
         
         <Routes>
-        <Route exaxt path='/login' element={<Login />} />
+        <Route exact path='/' element={<Login />} />
         <Route path='/details/:id' element={<Details />} />
-        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
         </Routes>
         
       </Router>
