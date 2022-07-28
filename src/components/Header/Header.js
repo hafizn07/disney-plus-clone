@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import styled from "styled-components";
 import React, { useEffect } from "react";
 import { auth, provider } from "../../Firebase/Firebase";
@@ -7,16 +6,16 @@ import {
   setUserLogIn,
   selectUserPhoto,
   setSignOut,
-} from "../../features/User/userSlice"; //selectUserPhoto,
+} from "../../features/User/userSlice"; 
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 
 function Header() {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
   const userName = useSelector(selectUserName);
   const userPhoto = useSelector(selectUserPhoto);
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   useEffect(() => {
     auth.onAuthStateChanged(async (user) => {
@@ -25,7 +24,7 @@ function Header() {
           setUserLogIn({
             name: user.displayName,
             email: user.email,
-            photo: user.photoURL,
+            photo: user.photoURL
           })
         );
         navigate("/home");
