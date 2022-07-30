@@ -1,46 +1,76 @@
-# Getting Started with Create React App and Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+<h1 align="center">
+  <br>
+  <a href="https://disney-plus-clone-c2bf9.web.app/"><img src="https://www.logo.wine/a/logo/Disney%2B/Disney%2B-White-Dark-Background-Logo.wine.svg" alt="Disney+ Clone" width="200"></a>
+  <br>
+  Disney+ clone
+  <br>
+</h1>
 
-## Available Scripts
+<h4 align="center">A beautiful Clone of Disney+ website made with <a href="https://reactjs.org/" target="_blank">React js</a> and integrated with <a href="https://firebase.google.com/" target="_blank">Firebase</a>.</h4>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="#about-project">About project</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#live-link">Live link</a>
+</p>
 
-### `npm start`
+![screenshot](/public/Assets/images/preview.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Responsive Design
+  - Desktop, mobile and tablet.
 
-### `npm test`
+* Fully Dynamic - Make changes, See changes
+  - Instantly see what movies you click.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Used the following major frameworks/libraries to complete the project
+  - [![React][React.js]][React-url]
+  - [![Firebase][Firebase]][Firebase-url]
+  - [![Styled components][Styled components]][Styled components-url]
+  - [![NPM][npm]][npm-url]
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How To Use
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
-### `npm run eject`
+```bash
+# Clone this repository
+$ git clone https://github.com/hafizmp/disney-plus-clone.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Go into the repository
+$ cd disney-plus-clone
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Install dependencies
+$ npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Run the app
+$ npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> **Note**
+> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-## Learn More
+## Live Link
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Disney plus Clone](https://github.com/amitmerchant1990/markdownify-web) - Live link of the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+
+[Firebase]: https://img.shields.io/badge/FIREBASE-FFF89C?style=for-the-badge&logo=firebase&logoColor=FF9F29
+[Firebase-url]: https://firebase.google.com/
+
+[Styled components]: https://img.shields.io/badge/STYLED%20COMPONENTS-3F4E4F?style=for-the-badge&logo=styledcomponents&logoColor=FF9F29
+[Styled components-url]: https://styled-components.com/
+
+[Youtube]: https://img.shields.io/badge/clever%20programmer-EB1D36?style=for-the-badge&logo=Youtube&logoColor=FFFFFF
+[Youtube-url]: https://www.youtube.com/c/CleverProgrammer
+
+[npm]: https://img.shields.io/badge/NPM-FFFFFF?style=for-the-badge&logo=npm&logoColor=FFFFFF
+[npm-url]: https://www.npmjs.com/package/react-router
