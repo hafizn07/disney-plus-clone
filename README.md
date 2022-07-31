@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A beautiful Clone of Disney+ website made with <a href="https://reactjs.org/" target="_blank">React js</a> and integrated with <a href="https://firebase.google.com/" target="_blank">Firebase</a>.</h4>
+<h4 align="center">A beautiful Clone of Disney+ website build with <a href="https://reactjs.org/" target="_blank">React js</a> and integrated with <a href="https://firebase.google.com/" target="_blank">Firebase</a>.</h4>
 
 <p align="center">
   <a href="#about-project">About project</a> •
